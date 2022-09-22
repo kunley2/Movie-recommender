@@ -1,0 +1,32 @@
+body {
+    background-color: grey;
+    background-image: url('image/20462735.jpg');
+    background-size: cover;
+    background-repeat: 100% 100%;
+}
+
+div.border {
+    border: 2px groove grey;
+    border-radius: 12px;
+    margin: auto 15% ;
+    width: 25%
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 2%;
+    opacity: 0.8
+}
+select {
+    line-height: 5px;
+    font-size: 15px;
+    max-width: 50%;
+}
+p, li {
+    color: white;
+    font-size: 20px;
+}
+i.material-icons{
+    color: white;
+    font-size: 2rem
+
+}

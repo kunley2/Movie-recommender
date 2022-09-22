@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommender</title>
+</head>
+{% load static %}
+<body>
+{% block content %}
+<p> please select the movie you would like to get recommendation for</p>
+<!--<span class="material-icons">live_tv</span>-->
+    <form method="post" action="{% url 'output' %}">
+        {% csrf_token %}
+
+        {{movie.as_p }}
+        <input type="submit" value="Enter">
+    </form>
+{% endblock %}
+</body>
+</html>
